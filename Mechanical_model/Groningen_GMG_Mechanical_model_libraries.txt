@@ -1,0 +1,56 @@
+Groningen_GMG_Mechanical_model_libraries.txt
+
+--------------------A. Preliminaries--------------------
+This file describes how to install libraries associated to the module Mechanical_model for compaction and stress calculation. The versions that have been tested are described in each library to be installed. All the tests for these codes have been done on macOS-BigSur. the arrows-> indicate the sites to visit or the command lines to run.
+
+This file and the Jupyter notebooks were prepared by M.Acosta at Caltech's Division of Geological and Planetary Science.
+The codes have been restructured for easy operation and were based on the work by J.D.Smith, H.Meyer, E.Heimisson, and V.Jarry-Camas. 
+For any questions regarding these codes, contact acosta (at) caltech.edu. 
+The last modification of this file was done in January 2023 by M.Acosta.
+
+--------------------B. Preparing a virtual environment--------------------
+
+The best usage for this module is to prepare a new anaconda virtual environment as follows:
+
+B.0. Install anaconda or miniconda
+-> https://docs.anaconda.com/anaconda/install/index.html
+or
+-> https://docs.conda.io/en/latest/miniconda.html
+
+B.1. In terminal, create a virtual environment with python 3.10 (this version is known to work): 
+-> conda create -n MechanicalModel_env python=3.10
+
+--------------------C. Installing the needed libraries in the virtual environment--------------------
+
+The best usage for this module is to prepare a new anaconda virtual environment as follows:
+
+C.0. In terminal activate the virtual environment
+-> conda activate MechanicalModel_env
+
+C.1. Install the needed libraries
+-> pip install pandas
+-> pip install scipy
+-> pip install astropy
+-> pip install ipykernel
+-> pip install jupyter
+-> pip install shapely
+-> pip install matplotlib
+-> pip install pytz
+-> pip install tqdm
+-> pip install torch
+
+
+C.1.1 (Needed only if you want to use cuda (GPU calculations))
+http://www.ml-illustrated.com/2020/02/11/how-to-setup-macs-cuda-for-tensorflow-pytorch.html
+
+
+--------------------D. Usage of the notebook: Groningen_GMG_mechanical_model.ipynb--------------------
+
+To run this module: 
+D.0. In terminal activate the virtual environment
+-> conda activate MechanicalModel_env
+
+D.1. In terminal, launch Jupyter notebook (this was installed through pip install ipykernel in the virtual environment)
+-> jupyter notebook
+
+D.2. Locate the file in your system and run all the cells. 
